@@ -1,10 +1,18 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import './App.css';
 import {hot} from 'react-hot-loader';
-import Fetchheroes from "./components/Fetchheroes";
+import Herodropdown from "./components/Herodropdown";
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useParams
+} from "react-router-dom";
 const App = () => {
-    return(
-        <Fetchheroes />
+    return (
+        <Herodropdown />
     )
 }
 export default hot(module)(App);

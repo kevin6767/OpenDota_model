@@ -1,8 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-const Fetchheroes = () => {
-
-};
+import {getStatsById} from '../services/heroes.service.js'
 
 
-export default Fetchheroes
+const Herodropdown = () => {
+    const heroId = useState(
+        'Select an ID'
+    )
+    useEffect(getStatsById());
+    return (
+        <h1> {heroId}</h1>
+
+
+
+
+        )
+}
+export default Herodropdown
